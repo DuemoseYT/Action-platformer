@@ -14,8 +14,8 @@ TagManager:
   - 
   - Ground
   - Enemy
-  - 
-  - 
+  - Glow
+  - Not lighted
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Lighting
+    uniqueID: 4178183101
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
