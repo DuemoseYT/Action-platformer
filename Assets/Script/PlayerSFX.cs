@@ -19,6 +19,8 @@ public class PlayerSFX : MonoBehaviour
     public AudioClip slideLoopClip;     // looping grind/scrape while sliding
     public AudioClip slideHitClip;      // played when a slide connects with an enemy
     public AudioClip groundPoundLandClip;
+    public AudioClip hurtClip;
+    public AudioClip deathClip;
 
     [Header("Slide Loop")]
     [Range(0f, 1f)] public float slideLoopVolume = 0.6f;
@@ -57,6 +59,8 @@ public class PlayerSFX : MonoBehaviour
     public void PlayDash()      => PlayOneShot(dashClip);
     public void PlaySlideHit()  => PlayOneShot(slideHitClip);
     public void PlayGroundPoundLand() => PlayOneShot(groundPoundLandClip);
+    public void PlayHurt()      => PlayOneShot(hurtClip);
+    public void PlayDeath()     => PlayOneShot(deathClip);
 
     /// <summary>Call once when a slide begins.</summary>
     public void StartSlideLoop()

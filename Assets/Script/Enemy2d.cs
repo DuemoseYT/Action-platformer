@@ -146,8 +146,7 @@ public class Enemy2D : MonoBehaviour, IDamageable, IPogoable
         // just got hit (e.g. the down-attack that's pogoing off us) — don't fight that knockback
         if (invulnTimer > 0f) return;
         // player has a temporary immunity window (mid-slide, mid-dash, etc.)
-        var invuln = other.GetComponentInParent<IInvulnerable>();
-        if (invuln != null && invuln.IsInvulnerable) return;
+        if (InvulnerabilityUtil.IsInvulnerable(other)) return;
 
         var playerDmg = other.GetComponentInParent<IDamageable>();
         if (playerDmg == null || !playerDmg.IsAlive) return;

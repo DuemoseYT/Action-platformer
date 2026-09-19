@@ -24,3 +24,19 @@ public interface IInvulnerable
 {
     bool IsInvulnerable { get; }
 }
+
+/// <summary>
+/// A player can end up with more than one IInvulnerable source (slide i-frames, hit i-frames,
+/// dash i-frames, etc). This checks all of them so any single active source blocks damage,
+/// instead of whichever GetComponentInParent happens to find first.
+/// </summary>
+public static class InvulnerabilityUtil
+{
+    public static bool IsInvulnerable(Component target)
+    {
+        var sources = target.GetComponentsInParent<IInvulnerable>();
+        foreach (var s in sources)
+            if (s.IsInvulnerable) return true;
+        return false;
+    }
+}

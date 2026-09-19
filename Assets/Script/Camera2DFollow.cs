@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 /// <summary>
@@ -44,16 +45,27 @@ public class CameraFollow2D : MonoBehaviour
     [Header("Shake")]
     public float shakeDecay = 4f;
 
+    [Header("Room Lock")]
+    [Tooltip("How long the pan/zoom takes when entering or leaving a locked room.")]
+    public float roomLockTransitionTime = 0.6f;
+
     private Camera cam;
     private Rigidbody2D targetRb;
     private Vector3 velRef;
     private Vector2 lookAhead, lookAheadRef;
     private float shakeAmount;
 
+    private bool roomLocked;
+    private bool lockTransitioning;
+    private Vector3 lockedPosition;
+    private float defaultOrthoSize;
+    private Coroutine roomLockRoutine;
+
     private void Awake()
     {
         cam = GetComponent<Camera>();
         if (target) targetRb = target.GetComponent<Rigidbody2D>();
+        defaultOrthoSize = cam.orthographicSize;
     }
 
     private void Start()
@@ -63,6 +75,20 @@ public class CameraFollow2D : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (lockTransitioning) return;   // the room-lock coroutine owns the camera this frame
+
+        if (roomLocked)
+        {
+            Vector3 lockedPos = lockedPosition;
+            if (shakeAmount > 0.0001f)
+            {
+                lockedPos += (Vector3)(Random.insideUnitCircle * shakeAmount);
+                shakeAmount = Mathf.MoveTowards(shakeAmount, 0f, shakeDecay * shakeAmount * Time.deltaTime + 0.01f * Time.deltaTime);
+            }
+            transform.position = lockedPos;
+            return;
+        }
+
         if (!target) return;
         if (!targetRb) targetRb = target.GetComponent<Rigidbody2D>();
 
@@ -152,6 +178,74 @@ public class CameraFollow2D : MonoBehaviour
         lookAhead = Vector2.zero;
         velRef = Vector3.zero;
         transform.position = ClampToBounds(TargetPoint());
+    }
+
+    /// <summary>
+    /// Stop following the target and pan/zoom so the whole given area is visible —
+    /// call this from a boss-room trigger. Pass a room's Collider2D.bounds.
+    /// </summary>
+    public void LockToRoom(Bounds roomBounds)
+    {
+        if (roomLockRoutine != null) StopCoroutine(roomLockRoutine);
+        roomLockRoutine = StartCoroutine(EnterLockRoutine(roomBounds));
+    }
+
+    /// <summary>Resume following the target, restoring the original zoom level.</summary>
+    public void Unlock()
+    {
+        roomLocked = false;
+        lockTransitioning = false;
+        if (roomLockRoutine != null) StopCoroutine(roomLockRoutine);
+        roomLockRoutine = StartCoroutine(RestoreSizeRoutine(defaultOrthoSize));
+    }
+
+    private IEnumerator EnterLockRoutine(Bounds roomBounds)
+    {
+        lockTransitioning = true;
+
+        float z = transform.position.z == 0f ? -10f : transform.position.z;
+        Vector3 targetPos = new Vector3(roomBounds.center.x, roomBounds.center.y, z);
+        float targetSize = ComputeFitOrthoSize(roomBounds);
+
+        Vector3 startPos = transform.position;
+        float startSize = cam.orthographicSize;
+        float t = 0f;
+
+        while (t < roomLockTransitionTime)
+        {
+            t += Time.deltaTime;
+            float p = Mathf.SmoothStep(0f, 1f, t / roomLockTransitionTime);
+            transform.position = Vector3.Lerp(startPos, targetPos, p);
+            cam.orthographicSize = Mathf.Lerp(startSize, targetSize, p);
+            yield return null;
+        }
+
+        transform.position = targetPos;
+        cam.orthographicSize = targetSize;
+        lockedPosition = targetPos;
+        lockTransitioning = false;
+        roomLocked = true;
+    }
+
+    private IEnumerator RestoreSizeRoutine(float targetSize)
+    {
+        float startSize = cam.orthographicSize;
+        float t = 0f;
+        while (t < roomLockTransitionTime)
+        {
+            t += Time.deltaTime;
+            cam.orthographicSize = Mathf.Lerp(startSize, targetSize, Mathf.SmoothStep(0f, 1f, t / roomLockTransitionTime));
+            yield return null;
+        }
+        cam.orthographicSize = targetSize;
+    }
+
+    /// <summary>Orthographic size needed so the whole area fits on screen (may letterbox one axis).</summary>
+    private float ComputeFitOrthoSize(Bounds b)
+    {
+        float sizeByHeight = b.extents.y;
+        float sizeByWidth  = b.extents.x / cam.aspect;
+        return Mathf.Max(sizeByHeight, sizeByWidth);
     }
 
     private void OnDrawGizmosSelected()
