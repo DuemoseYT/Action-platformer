@@ -18,6 +18,12 @@ public class BossAI : MonoBehaviour
     [Tooltip("If false, the boss attacks regardless of distance once the cooldown is up.")]
     public bool requireRange = true;
 
+    [Header("Attack Mix (relative weights — don't need to add up to any particular total)")]
+    public float doubleAttackWeight = 1f;
+    public float groundSlamWeight   = 1f;
+    public float leftSweepWeight    = 1f;
+    public float rightSweepWeight   = 1f;
+
     private float cooldownTimer;
 
     private void Awake()
@@ -48,8 +54,20 @@ public class BossAI : MonoBehaviour
             if (dist > attackRange) return;
         }
 
-        controller.DoubleHandAttack();
+        DoRandomAttack();
         cooldownTimer = Random.Range(minCooldown, maxCooldown);
+    }
+
+    private void DoRandomAttack()
+    {
+        float total = doubleAttackWeight + groundSlamWeight + leftSweepWeight + rightSweepWeight;
+        if (total <= 0f) { controller.DoubleHandAttack(); return; }
+
+        float roll = Random.value * total;
+        if ((roll -= doubleAttackWeight) < 0f) { controller.DoubleHandAttack(); return; }
+        if ((roll -= groundSlamWeight)   < 0f) { controller.GroundSlamAttack(); return; }
+        if ((roll -= leftSweepWeight)    < 0f) { controller.LeftHandSweepAttack(); return; }
+        controller.RightHandSweepAttack();
     }
 
     private void OnDrawGizmosSelected()

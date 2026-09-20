@@ -521,6 +521,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1752356960}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &152239056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152239057}
+  m_Layer: 0
+  m_Name: rightHandStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &152239057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152239056}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 140.16, y: -1.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &239576986
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +779,37 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 34.84, y: -1.53, z: 0}
   m_LocalScale: {x: 0.55429035, y: 2.230868, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &429749933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 429749934}
+  m_Layer: 0
+  m_Name: RightHandEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &429749934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429749933}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 90.44, y: -1.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1420,6 +1482,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &638278459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 638278460}
+  m_Layer: 0
+  m_Name: LeftHandStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &638278460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638278459}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 90.44, y: -1.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &642634470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,6 +1819,8 @@ GameObject:
   - component: {fileID: 701267728}
   - component: {fileID: 701267726}
   - component: {fileID: 701267727}
+  - component: {fileID: 701267729}
+  - component: {fileID: 701267730}
   m_Layer: 0
   m_Name: BossLeftHand
   m_TagString: Untagged
@@ -1891,6 +1986,70 @@ MonoBehaviour:
   knockbackForce: 16
   hitCooldown: 0.5
   damageActive: 1
+--- !u!114 &701267729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701267723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 911630352ce537641a1445b3cfa6b8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossGroundSlam
+  shockwavePrefab: {fileID: 0}
+  groundPoint: {fileID: 0}
+  bothDirections: 0
+  damage: 1
+  knockbackForce: 50
+  travelSpeed: 10
+  maxDistance: 50
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &701267730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701267723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f34b0249f8c95849b151212ebcbb3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossHandSweep
+  startPoint: {fileID: 638278460}
+  endPoint: {fileID: 1388114321}
+  sweepDuration: 0.9
+  sweepCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnAfterSweep: 1
+  returnDuration: 0.5
+  sweepAnimTrigger: Sweep
 --- !u!1 &745200788
 GameObject:
   m_ObjectHideFlags: 0
@@ -2817,13 +2976,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8af03812f12869440b4ece96cd106814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxLives: 3
+  maxLives: 10
   invulnTime: 1
   knockbackForce: 10
   spriteRenderer: {fileID: 1110869810}
   flashInterval: 0.08
   cam: {fileID: 519420033}
   sfx: {fileID: 1110869815}
+  movement: {fileID: 1110869808}
   hitShake: 0.15
   onLivesChanged:
     m_PersistentCalls:
@@ -3249,6 +3409,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.53311, y: 0.36327, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1388114320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1388114321}
+  m_Layer: 0
+  m_Name: LeftHandEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1388114321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388114320}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 140.16, y: -1.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3709,9 +3900,17 @@ MonoBehaviour:
   leftHandAnimator: {fileID: 701267727}
   rightHandAnimator: {fileID: 1812935724}
   attackTrigger: Attack
+  groundSlamTrigger: GroundSlam
   handStagger: 0
-  autoAttack: 1
+  leftHandSweep: {fileID: 701267730}
+  rightHandSweep: {fileID: 1812935727}
+  sweepTelegraphColor: {r: 1, g: 0.85, b: 0.2, a: 0.85}
+  sweepTelegraphCount: 5
+  autoAttack: 0
   attackInterval: 3
+  telegraphTime: 0.5
+  attackTelegraphColor: {r: 1, g: 0.2, b: 0.2, a: 0.85}
+  slamTelegraphColor: {r: 1, g: 0.6, b: 0.1, a: 0.85}
 --- !u!114 &1758955142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3726,10 +3925,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BossAI
   controller: {fileID: 1758955141}
   player: {fileID: 1110869811}
-  attackRange: 8
-  minCooldown: 2
-  maxCooldown: 4
+  attackRange: 29.43
+  minCooldown: 5
+  maxCooldown: 10
   requireRange: 1
+  doubleAttackWeight: 1
+  groundSlamWeight: 1
+  leftSweepWeight: 1
+  rightSweepWeight: 1
 --- !u!1 &1773205445
 GameObject:
   m_ObjectHideFlags: 0
@@ -3881,6 +4084,8 @@ GameObject:
   - component: {fileID: 1812935725}
   - component: {fileID: 1812935723}
   - component: {fileID: 1812935724}
+  - component: {fileID: 1812935726}
+  - component: {fileID: 1812935727}
   m_Layer: 0
   m_Name: BossRightHand
   m_TagString: Untagged
@@ -4021,6 +4226,70 @@ MonoBehaviour:
   knockbackForce: 16
   hitCooldown: 0.5
   damageActive: 1
+--- !u!114 &1812935726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812935720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 911630352ce537641a1445b3cfa6b8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossGroundSlam
+  shockwavePrefab: {fileID: 5326077150943714796, guid: d9df7c35064006741b0fb0a9fd0a90b4, type: 3}
+  groundPoint: {fileID: 1430929115}
+  bothDirections: 0
+  damage: 1
+  knockbackForce: 50
+  travelSpeed: 10
+  maxDistance: 50
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &1812935727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812935720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f34b0249f8c95849b151212ebcbb3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossHandSweep
+  startPoint: {fileID: 152239057}
+  endPoint: {fileID: 429749934}
+  sweepDuration: 0.9
+  sweepCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnAfterSweep: 1
+  returnDuration: 0.5
+  sweepAnimTrigger: Sweep
 --- !u!1 &1816328426
 GameObject:
   m_ObjectHideFlags: 0
@@ -5176,3 +5445,7 @@ SceneRoots:
   - {fileID: 1919826096}
   - {fileID: 1752356960}
   - {fileID: 1816328428}
+  - {fileID: 638278460}
+  - {fileID: 429749934}
+  - {fileID: 1388114321}
+  - {fileID: 152239057}

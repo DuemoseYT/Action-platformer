@@ -462,6 +462,22 @@ public class PlayerMovement2D : MonoBehaviour
                           groundPoundDustA, groundPoundDustB, burstCount: 20, size: 0.2f);
     }
 
+    /// <summary>Generic external launch (knockback, big hits) that plays nicely with the
+    /// movement state machine — cancels dash/slide first so they can't immediately
+    /// overwrite the velocity you're setting, the same way Pogo does.</summary>
+    public void Launch(Vector2 velocity)
+    {
+        if (isDashing) EndDash();
+        if (isSliding) TryEndSlide(true);
+
+        isJumping = true;
+        jumpCutApplied = false;
+        coyoteCounter = 0f;
+        wallCoyoteCounter = 0f;
+
+        Vel = velocity;
+    }
+
     // ── pogo support ─────────────────────────────────────────────
     public bool IsGrounded => isGrounded;
     public bool IsSliding  => isSliding;

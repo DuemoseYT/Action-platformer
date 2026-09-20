@@ -20,13 +20,14 @@ public class PlayerHealth : MonoBehaviour, IDamageable, IInvulnerable
 
     [Header("Hit Response")]
     public float invulnTime = 1f;
-    public float knockbackForce = 10f;
+    public float knockbackForce = 16f;
     public SpriteRenderer spriteRenderer;
     public float flashInterval = 0.08f;   // blink rate during the invuln window
 
     [Header("References (optional)")]
     public CameraFollow2D cam;
     public PlayerSFX sfx;
+    public PlayerMovement2D movement;
     public float hitShake = 0.15f;
 
     [Header("Events")]
@@ -47,6 +48,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable, IInvulnerable
         if (!spriteRenderer) spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         if (!cam && Camera.main) cam = Camera.main.GetComponent<CameraFollow2D>();
         if (!sfx) sfx = GetComponent<PlayerSFX>();
+        if (!movement) movement = GetComponent<PlayerMovement2D>();
 
         CurrentLives = maxLives;
     }
@@ -67,8 +69,13 @@ public class PlayerHealth : MonoBehaviour, IDamageable, IInvulnerable
 
         Vector2 push = new Vector2(knockbackDir.x, Mathf.Max(knockbackDir.y, 0f));
         if (push.sqrMagnitude < 0.01f) push = Vector2.up;
+        // a source can pass a longer-than-unit vector to signal "launch harder than usual"
+        float strength = Mathf.Max(1f, knockbackDir.magnitude);
+        Vector2 launchVel = push.normalized * knockbackForce * strength;
+
         // UNITY 6: swap `linearVelocity` for `velocity` if you're on an older Unity version.
-        rb.linearVelocity = push.normalized * knockbackForce;
+        if (movement) movement.Launch(launchVel);
+        else rb.linearVelocity = launchVel;
 
         if (cam) cam.Shake(hitShake);
         sfx?.PlayHurt();
