@@ -96,7 +96,7 @@ MonoBehaviour:
   launchMultiplier: 2.8
   speed: 10
   maxDistance: 50
-  maxLifetime: 1
+  maxLifetime: 0.3
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
