@@ -1,0 +1,1495 @@
+fileFormatVersion: 2
+guid: 57573c1991a71e84eabd29514033413e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -96749076397217177
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_0
+  - first:
+      213: 1367834717995718028
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_1
+  - first:
+      213: 3645050696817008431
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_2
+  - first:
+      213: -6074462612125454607
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_3
+  - first:
+      213: -3435752783866586321
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_4
+  - first:
+      213: -3400388190451237583
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_5
+  - first:
+      213: 8026173453091077074
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_6
+  - first:
+      213: -5974928442592941003
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_7
+  - first:
+      213: -8176762997568928477
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_8
+  - first:
+      213: 6823701153072688891
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_9
+  - first:
+      213: -6444501618558376036
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_10
+  - first:
+      213: -3123009150506886233
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_11
+  - first:
+      213: -3410106080000624808
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_12
+  - first:
+      213: -3757860272206814125
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_13
+  - first:
+      213: -3422467184276927304
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_14
+  - first:
+      213: 3358989407285250009
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_15
+  - first:
+      213: 1740702230261883875
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_16
+  - first:
+      213: 527321840624628826
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_17
+  - first:
+      213: 5460293297657659274
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_18
+  - first:
+      213: 6363614253404940579
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_19
+  - first:
+      213: -31080349918433150
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_20
+  - first:
+      213: 8210573115201619372
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_21
+  - first:
+      213: 8025298948347063993
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_22
+  - first:
+      213: -8950927427435810736
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_23
+  - first:
+      213: -1631446974175600202
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_24
+  - first:
+      213: -3102511407922455508
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_25
+  - first:
+      213: 2583845553415074016
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_26
+  - first:
+      213: 2916071163618766214
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_27
+  - first:
+      213: 9055851176314438814
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_28
+  - first:
+      213: 6395006023739303769
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_29
+  - first:
+      213: -8991491917177377771
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_30
+  - first:
+      213: 5955356123993859785
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_31
+  - first:
+      213: -1301798948847192688
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_32
+  - first:
+      213: 8532534763544501594
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_33
+  - first:
+      213: 2190307274478729087
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_34
+  - first:
+      213: 82774366638121626
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_35
+  - first:
+      213: 4210021445687248642
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_36
+  - first:
+      213: -3341972084493400608
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_37
+  - first:
+      213: 4947260080386831775
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_38
+  - first:
+      213: -4981394807171715470
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_39
+  - first:
+      213: -4234664457532586891
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_40
+  - first:
+      213: -8154526096417332646
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_41
+  - first:
+      213: 6956257825019785602
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_42
+  - first:
+      213: 6161044315574689925
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_43
+  - first:
+      213: -6258449127068248558
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_44
+  - first:
+      213: 1377056163367079218
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_45
+  - first:
+      213: -1208148415045343772
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_46
+  - first:
+      213: -2992834879032371884
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_47
+  - first:
+      213: -1338977331389574053
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_48
+  - first:
+      213: 3220961005450530405
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_49
+  - first:
+      213: 7224007956898887441
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_50
+  - first:
+      213: 4483948733519748151
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_51
+  - first:
+      213: 6652822196753994279
+    second: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_0
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 481
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a2ff44a3748aef0800000000000000
+      internalID: -96749076397217177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_1
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 486
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85d49dcd668bf210800000000000000
+      internalID: 1367834717995718028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 484
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f5114eb42d59230800000000000000
+      internalID: 3645050696817008431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_3
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 466
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1feeeda207c23bba0800000000000000
+      internalID: -6074462612125454607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 447
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b9295eb01c150d0800000000000000
+      internalID: -3435752783866586321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 23
+        width: 331
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d78b1f4f46fc0d0800000000000000
+      internalID: -3400388190451237583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_6
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 440
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dbf9292b32b26f60800000000000000
+      internalID: 8026173453091077074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_7
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 462
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53caedcec3ac41da0800000000000000
+      internalID: -5974928442592941003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_8
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 452
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3258855406d468e80800000000000000
+      internalID: -8176762997568928477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_9
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 450
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfe22529b08a2be50800000000000000
+      internalID: 6823701153072688891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_10
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 450
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97e56f1ce78096a0800000000000000
+      internalID: -6444501618558376036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_11
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 417
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab1eb959b7d8a4d0800000000000000
+      internalID: -3123009150506886233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_12
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 390
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857b927769edca0d0800000000000000
+      internalID: -3410106080000624808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 376
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3546f8f0ef569dbc0800000000000000
+      internalID: -3757860272206814125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_14
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 329
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bc0eb99a34f080d0800000000000000
+      internalID: -3422467184276927304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_15
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 306
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d78989b1178d9e20800000000000000
+      internalID: 3358989407285250009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_16
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 304
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e36d7ea477382810800000000000000
+      internalID: 1740702230261883875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_17
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 311
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a547cb09b6c615700800000000000000
+      internalID: 527321840624628826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_18
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 319
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8fb45803dbd6cb40800000000000000
+      internalID: 5460293297657659274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_19
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 304
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32960d59279105850800000000000000
+      internalID: 6363614253404940579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_20
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 274
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280fd9f1694919ff0800000000000000
+      internalID: -31080349918433150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 289
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca507fd2fb0d1f170800000000000000
+      internalID: 8210573115201619372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_22
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 233
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9beea88afd69f5f60800000000000000
+      internalID: 8025298948347063993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 286
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0503365cdeae7c380800000000000000
+      internalID: -8950927427435810736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_24
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 279
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1a06aee9feb59e0800000000000000
+      internalID: -1631446974175600202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_25
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 246
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2c5f23ff4aa1f4d0800000000000000
+      internalID: -3102511407922455508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_26
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 240
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e037cd47d9abd320800000000000000
+      internalID: 2583845553415074016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_27
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 254
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68da147f547f77820800000000000000
+      internalID: 2916071163618766214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_28
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 178
+        width: 16
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9486073aa8dcad70800000000000000
+      internalID: 9055851176314438814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_29
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 182
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957e67da810afb850800000000000000
+      internalID: 6395006023739303769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_30
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 124
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ca8d38dbdc73380800000000000000
+      internalID: -8991491917177377771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_31
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 145
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6e99987dca5a250800000000000000
+      internalID: 5955356123993859785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_32
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 131
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0957cf4d0c41fede0800000000000000
+      internalID: -1301798948847192688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_33
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 126
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5dddbef827a96670800000000000000
+      internalID: 8532534763544501594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_34
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 92
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7732448cd8856e10800000000000000
+      internalID: 2190307274478729087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_35
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 119
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9229ff09d2162100800000000000000
+      internalID: 82774366638121626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_36
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 88
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20707fef2300d6a30800000000000000
+      internalID: 4210021445687248642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_37
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 90
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e5cf7e781eee91d0800000000000000
+      internalID: -3341972084493400608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_38
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 88
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f957de6d4d238a440800000000000000
+      internalID: 4947260080386831775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_39
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 60
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27eed80c0d78edab0800000000000000
+      internalID: -4981394807171715470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_40
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 50
+        width: 62
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5744cc1bc137b35c0800000000000000
+      internalID: -4234664457532586891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_41
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 61
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52646748bd45de80800000000000000
+      internalID: -8154526096417332646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_42
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 48
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281f552d2a7998060800000000000000
+      internalID: 6956257825019785602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_43
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 70
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580e443992d608550800000000000000
+      internalID: 6161044315574689925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_44
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 65
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2165e387da58529a0800000000000000
+      internalID: -6258449127068248558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_45
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 38
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23dc14dd8494c1310800000000000000
+      internalID: 1377056163367079218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_46
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 53
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e56545ea6bcb3fe0800000000000000
+      internalID: -1208148415045343772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_47
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 21
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45550e3c8805776d0800000000000000
+      internalID: -2992834879032371884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_48
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 17
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b545938163ffa6de0800000000000000
+      internalID: -1338977331389574053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_49
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e834518f623bc20800000000000000
+      internalID: 3220961005450530405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_50
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 12
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 117bd8d56f4d04460800000000000000
+      internalID: 7224007956898887441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_51
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 0
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73cd18cbd9f2a3e30800000000000000
+      internalID: 4483948733519748151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skrmbillede_2026-08-25_101022qdwqdqwfwfe_52
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 0
+        width: 47
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7221b5f2a82935c50800000000000000
+      internalID: 6652822196753994279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_0: -96749076397217177
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_1: 1367834717995718028
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_10: -6444501618558376036
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_11: -3123009150506886233
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_12: -3410106080000624808
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_13: -3757860272206814125
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_14: -3422467184276927304
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_15: 3358989407285250009
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_16: 1740702230261883875
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_17: 527321840624628826
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_18: 5460293297657659274
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_19: 6363614253404940579
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_2: 3645050696817008431
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_20: -31080349918433150
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_21: 8210573115201619372
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_22: 8025298948347063993
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_23: -8950927427435810736
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_24: -1631446974175600202
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_25: -3102511407922455508
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_26: 2583845553415074016
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_27: 2916071163618766214
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_28: 9055851176314438814
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_29: 6395006023739303769
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_3: -6074462612125454607
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_30: -8991491917177377771
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_31: 5955356123993859785
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_32: -1301798948847192688
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_33: 8532534763544501594
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_34: 2190307274478729087
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_35: 82774366638121626
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_36: 4210021445687248642
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_37: -3341972084493400608
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_38: 4947260080386831775
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_39: -4981394807171715470
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_4: -3435752783866586321
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_40: -4234664457532586891
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_41: -8154526096417332646
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_42: 6956257825019785602
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_43: 6161044315574689925
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_44: -6258449127068248558
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_45: 1377056163367079218
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_46: -1208148415045343772
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_47: -2992834879032371884
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_48: -1338977331389574053
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_49: 3220961005450530405
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_5: -3400388190451237583
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_50: 7224007956898887441
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_51: 4483948733519748151
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_52: 6652822196753994279
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_6: 8026173453091077074
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_7: -5974928442592941003
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_8: -8176762997568928477
+      Skrmbillede_2026-08-25_101022qdwqdqwfwfe_9: 6823701153072688891
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

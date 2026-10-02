@@ -36,14 +36,20 @@ public class Enemy2D : MonoBehaviour, IDamageable, IPogoable
 
     [Header("Checks")]
     public LayerMask groundLayer;
-    public Transform edgeCheck;      // in front of the feet
-    public Transform wallCheck;      // in front of the body
+    [Tooltip("How far ahead (in the direction of travel) the wall check sits.")]
+    public float wallCheckDistance = 0.5f;
+    [Tooltip("How far ahead the edge/ledge check sits.")]
+    public float edgeCheckDistance = 0.5f;
+    [Tooltip("How far below the enemy's feet the edge check looks for ground.")]
+    public float edgeCheckDepth = 0.4f;
     public Vector2 checkSize = new Vector2(0.12f, 0.12f);
 
     [Header("Visuals")]
     public SpriteRenderer spriteRenderer;
     public Color hitFlashColor = Color.white;
     public float hitFlashTime = 0.08f;
+    [Tooltip("A random one of these is shown briefly whenever this enemy is hit — wince frames, damage poses, whatever variety you want. Leave empty to just use the color flash.")]
+    public Sprite[] hitSprites;
 
     private Rigidbody2D rb;
     private int   dir;
@@ -51,6 +57,9 @@ public class Enemy2D : MonoBehaviour, IDamageable, IPogoable
     private float invulnTimer, knockbackTimer;
     private bool  dying;
     private Color baseColor;
+    private Coroutine hitRoutine;
+    private Sprite currentHitSprite;
+    private float hitSpriteTimer;
 
     public bool IsAlive => !dying && health > 0;
     public bool CanPogo => pogoable && (IsAlive || pogoableWhileDying);
@@ -72,13 +81,29 @@ public class Enemy2D : MonoBehaviour, IDamageable, IPogoable
         knockbackTimer -= Time.deltaTime;
     }
 
+    private void LateUpdate()
+    {
+        // Runs after Animator evaluation, so forcing the sprite here guarantees it's what
+        // actually shows on screen this frame — no need to find or disable any Animator.
+        if (hitSpriteTimer > 0f && spriteRenderer)
+        {
+            spriteRenderer.sprite = currentHitSprite;
+            hitSpriteTimer -= Time.deltaTime;
+        }
+    }
+
     private void FixedUpdate()
     {
         if (dying || knockbackTimer > 0f || !patrol) return;
 
-        // turn around at a wall or a ledge
-        bool wallAhead = wallCheck && Physics2D.OverlapBox(wallCheck.position, checkSize, 0f, groundLayer);
-        bool groundAhead = !edgeCheck || Physics2D.OverlapBox(edgeCheck.position, checkSize, 0f, groundLayer);
+        // turn around at a wall or a ledge — positions are derived fresh from `dir` every
+        // tick, so there's no mutable state that can get out of sync and cause flip-flopping
+        Vector2 origin = transform.position;
+        Vector2 wallCheckPos = origin + new Vector2(dir * wallCheckDistance, 0f);
+        Vector2 edgeCheckPos = origin + new Vector2(dir * edgeCheckDistance, -edgeCheckDepth);
+
+        bool wallAhead   = Physics2D.OverlapBox(wallCheckPos, checkSize, 0f, groundLayer);
+        bool groundAhead = Physics2D.OverlapBox(edgeCheckPos, checkSize, 0f, groundLayer);
         if (wallAhead || !groundAhead) Flip();
 
         // UNITY 6: swap `velocity` for `linearVelocity` in this method.
@@ -89,10 +114,6 @@ public class Enemy2D : MonoBehaviour, IDamageable, IPogoable
     {
         dir *= -1;
         if (spriteRenderer) spriteRenderer.flipX = dir < 0;
-
-        // mirror the check points so they stay in front
-        if (edgeCheck) edgeCheck.localPosition = new Vector3(-edgeCheck.localPosition.x, edgeCheck.localPosition.y, 0f);
-        if (wallCheck) wallCheck.localPosition = new Vector3(-wallCheck.localPosition.x, wallCheck.localPosition.y, 0f);
     }
 
     // ── IDamageable ──────────────────────────────────────────────
@@ -110,16 +131,27 @@ public class Enemy2D : MonoBehaviour, IDamageable, IPogoable
         rb.linearVelocity = push * knockbackForce;
         knockbackTimer = knockbackTime;
 
-        if (spriteRenderer) StartCoroutine(Flash());
+        if (spriteRenderer)
+        {
+            if (hitRoutine != null) StopCoroutine(hitRoutine);
+            hitRoutine = StartCoroutine(FlashColor());
+        }
+
+        if (hitSprites != null && hitSprites.Length > 0)
+        {
+            currentHitSprite = hitSprites[Random.Range(0, hitSprites.Length)];
+            hitSpriteTimer = hitFlashTime;
+        }
 
         if (health <= 0) StartCoroutine(Die());
     }
 
-    private IEnumerator Flash()
+    private IEnumerator FlashColor()
     {
         spriteRenderer.color = hitFlashColor;
         yield return new WaitForSeconds(hitFlashTime);
         if (spriteRenderer) spriteRenderer.color = baseColor;
+        hitRoutine = null;
     }
 
     private IEnumerator Die()
@@ -160,8 +192,11 @@ public class Enemy2D : MonoBehaviour, IDamageable, IPogoable
 
     private void OnDrawGizmosSelected()
     {
+        int previewDir = Application.isPlaying ? dir : (startDirection >= 0 ? 1 : -1);
+        Vector2 origin = transform.position;
+
         Gizmos.color = Color.red;
-        if (edgeCheck) Gizmos.DrawWireCube(edgeCheck.position, checkSize);
-        if (wallCheck) Gizmos.DrawWireCube(wallCheck.position, checkSize);
+        Gizmos.DrawWireCube(origin + new Vector2(previewDir * wallCheckDistance, 0f), checkSize);
+        Gizmos.DrawWireCube(origin + new Vector2(previewDir * edgeCheckDistance, -edgeCheckDepth), checkSize);
     }
 }
