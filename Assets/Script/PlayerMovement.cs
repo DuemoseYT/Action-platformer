@@ -108,12 +108,22 @@ public class PlayerMovement2D : MonoBehaviour
 
     [Header("Visuals (optional)")]
     public SpriteRenderer spriteRenderer;
+    [Tooltip("Turn on if your sprite's default art faces left instead of right (fixes moonwalking).")]
+    public bool invertFacingFlip = false;
+    [Tooltip("Auto-finds an Animator on this object or its children if left empty.")]
+    public Animator animator;
+    [Tooltip("Bool parameter name in the Animator Controller for the running sprite set.")]
+    public string isRunningParam = "IsRunning";
+    [Tooltip("Bool parameter name for idle — always the exact opposite of IsRunning, so you can condition transitions on it directly instead of IsRunning == false.")]
+    public string isIdleParam = "IsIdle";
+    [Tooltip("Minimum horizontal speed to count as 'running' — keeps it off during the last inch of sliding to a stop.")]
+    public float runAnimThreshold = 0.1f;
 
     // ── runtime state ────────────────────────────────────────────
     private Rigidbody2D rb;
 
     private float moveX, moveY;
-    private int   facing = 0;
+    private int   facing = 1;
 
     private bool isGrounded, onWallLeft, onWallRight;
     private bool IsOnWall => onWallLeft || onWallRight;
@@ -154,6 +164,7 @@ public class PlayerMovement2D : MonoBehaviour
         dashesLeft = maxDashes;
         if (!cam && Camera.main) cam = Camera.main.GetComponent<CameraFollow2D>();
         if (!sfx) sfx = GetComponent<PlayerSFX>();
+        if (!animator) animator = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -195,6 +206,16 @@ public class PlayerMovement2D : MonoBehaviour
             TryEndSlide();
 
         UpdateFacing();
+        UpdateAnimator();
+    }
+
+    private void UpdateAnimator()
+    {
+        if (!animator) return;
+        bool running = isGrounded && !isDashing && !isSliding && !isGroundPounding
+                       && Mathf.Abs(Vel.x) > runAnimThreshold;
+        animator.SetBool(isRunningParam, running);
+        animator.SetBool(isIdleParam, !running);
     }
 
     private void FixedUpdate()
@@ -258,8 +279,15 @@ public class PlayerMovement2D : MonoBehaviour
     private void UpdateFacing()
     {
         if (isDashing || isSliding) return;
-        if (moveX != 1) facing = (int)Mathf.Sign(moveX);
-        if (spriteRenderer) spriteRenderer.flipX = facing < 1;
+        if (moveX != 0) facing = (int)Mathf.Sign(moveX);
+        ApplyFacingFlip();
+    }
+
+    private void ApplyFacingFlip()
+    {
+        if (!spriteRenderer) return;
+        bool flip = facing < 0;
+        spriteRenderer.flipX = invertFacingFlip ? !flip : flip;
     }
 
     // ── run ──────────────────────────────────────────────────────
@@ -320,7 +348,7 @@ public class PlayerMovement2D : MonoBehaviour
 
         Vel = new Vector2(-dir * wallJumpPower.x, wallJumpPower.y);
         facing = -dir;
-        if (spriteRenderer) spriteRenderer.flipX = facing < 1;
+        ApplyFacingFlip();
         sfx?.PlayWallJump();
     }
 
