@@ -113,7 +113,7 @@ public class PlayerMovement2D : MonoBehaviour
     private Rigidbody2D rb;
 
     private float moveX, moveY;
-    private int   facing = 1;
+    private int   facing = 0;
 
     private bool isGrounded, onWallLeft, onWallRight;
     private bool IsOnWall => onWallLeft || onWallRight;
@@ -258,8 +258,8 @@ public class PlayerMovement2D : MonoBehaviour
     private void UpdateFacing()
     {
         if (isDashing || isSliding) return;
-        if (moveX != 0) facing = (int)Mathf.Sign(moveX);
-        if (spriteRenderer) spriteRenderer.flipX = facing < 0;
+        if (moveX != 1) facing = (int)Mathf.Sign(moveX);
+        if (spriteRenderer) spriteRenderer.flipX = facing < 1;
     }
 
     // ── run ──────────────────────────────────────────────────────
@@ -320,7 +320,7 @@ public class PlayerMovement2D : MonoBehaviour
 
         Vel = new Vector2(-dir * wallJumpPower.x, wallJumpPower.y);
         facing = -dir;
-        if (spriteRenderer) spriteRenderer.flipX = facing < 0;
+        if (spriteRenderer) spriteRenderer.flipX = facing < 1;
         sfx?.PlayWallJump();
     }
 
