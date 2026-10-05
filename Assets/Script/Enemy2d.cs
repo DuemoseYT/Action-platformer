@@ -60,6 +60,7 @@ public class Enemy2D : MonoBehaviour, IDamageable, IPogoable
     private Coroutine hitRoutine;
     private Sprite currentHitSprite;
     private float hitSpriteTimer;
+    private int hitSpriteIndex;
 
     public bool IsAlive => !dying && health > 0;
     public bool CanPogo => pogoable && (IsAlive || pogoableWhileDying);
@@ -139,7 +140,8 @@ public class Enemy2D : MonoBehaviour, IDamageable, IPogoable
 
         if (hitSprites != null && hitSprites.Length > 0)
         {
-            currentHitSprite = hitSprites[Random.Range(0, hitSprites.Length)];
+            currentHitSprite = hitSprites[hitSpriteIndex];
+            hitSpriteIndex = (hitSpriteIndex + 1) % hitSprites.Length;
             hitSpriteTimer = hitFlashTime;
         }
 

@@ -11340,7 +11340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ed50bbc16076e4bb80e27d845e9353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy2D
-  maxHealth: 10
+  maxHealth: 3
   invulnTime: 0.15
   deathDelay: 0.35
   moveSpeed: 3
@@ -11355,7 +11355,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
-  wallCheckDistance: -0.79
+  wallCheckDistance: 0.88
   edgeCheckDistance: -0.08
   edgeCheckDepth: 1.8
   checkSize: {x: 0.3, y: 0.27}
@@ -11363,10 +11363,9 @@ MonoBehaviour:
   hitFlashColor: {r: 1, g: 0, b: 0, a: 1}
   hitFlashTime: 0.08
   hitSprites:
-  - {fileID: -4182344024500364448, guid: a8ad09d77fb67bd41abbb7a3406793b4, type: 3}
-  - {fileID: 8087623055172426070, guid: 9cfaec29cc2b3094b9d9e6bcb49f779f, type: 3}
-  - {fileID: 6307690751213633153, guid: f6d3b04d152370b4cb6de430a5701f89, type: 3}
-  - {fileID: -96749076397217177, guid: 57573c1991a71e84eabd29514033413e, type: 3}
+  - {fileID: -3400388190451237583, guid: 57573c1991a71e84eabd29514033413e, type: 3}
+  - {fileID: -2705560750938808427, guid: f6d3b04d152370b4cb6de430a5701f89, type: 3}
+  - {fileID: -6860422055344923549, guid: a8ad09d77fb67bd41abbb7a3406793b4, type: 3}
 --- !u!1 &4829139919633515303
 GameObject:
   m_ObjectHideFlags: 0
@@ -11579,7 +11578,7 @@ MonoBehaviour:
   attackMouseButton: 0
   keyUp: 119
   keyDown: 115
-  damage: 3
+  damage: 1
   cooldown: 0.3
   activeTime: 0.09
   knockbackForce: 12
@@ -11706,7 +11705,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 873203057259679366, guid: 56eeaaa392a791e4c8185ea1757560a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
