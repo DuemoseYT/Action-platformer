@@ -11116,6 +11116,7 @@ MonoBehaviour:
   ceilingCheck: {fileID: 1218907172600555634}
   ceilingCheckSize: {x: 0.45, y: 0.12}
   spriteRenderer: {fileID: 921671752}
+  wallSprite: {fileID: -1370451616311436110, guid: 3578ca01cca9f1743992fabefded0a4c, type: 3}
   invertFacingFlip: 1
   animator: {fileID: 921671753}
   isRunningParam: IsRunning

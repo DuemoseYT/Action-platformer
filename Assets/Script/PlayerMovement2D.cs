@@ -108,6 +108,8 @@ public class PlayerMovement2D : MonoBehaviour
 
     [Header("Visuals (optional)")]
     public SpriteRenderer spriteRenderer;
+    [Tooltip("Shown whenever the player is touching a wall while airborne. Overrides the Animator while active, same as any other pose sprite.")]
+    public Sprite wallSprite;
     [Tooltip("Turn on if your sprite's default art faces left instead of right (fixes moonwalking).")]
     public bool invertFacingFlip = false;
     [Tooltip("Auto-finds an Animator on this object or its children if left empty.")]
@@ -227,6 +229,14 @@ public class PlayerMovement2D : MonoBehaviour
 
         DoWallSlide();
         DoGravity();
+    }
+
+    private void LateUpdate()
+    {
+        // Runs after Animator evaluation, so forcing the sprite here guarantees it's what
+        // actually shows on screen — no need to touch the Animator or IsRunning/IsIdle at all.
+        if (!spriteRenderer || !wallSprite) return;
+        if (IsOnWall && !isGrounded) spriteRenderer.sprite = wallSprite;
     }
 
     // ── input & checks ───────────────────────────────────────────
