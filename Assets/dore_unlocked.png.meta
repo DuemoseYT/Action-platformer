@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 3578ca01cca9f1743992fabefded0a4c
+guid: 680189df02330c846b1cf73354e0f8a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8837053558658463411
-    second: jdjqqqdq_0
-  - first:
-      213: -1370451616311436110
-    second: jdjqqqdq_1
+      213: -915843649222203817
+    second: dore_unlocked_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jdjqqqdq_0
+      name: dore_unlocked_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 21
-        width: 8
-        height: 8
+        x: 144
+        y: 13
+        width: 66
+        height: 130
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d498f0feb9a7c5580800000000000000
-      internalID: -8837053558658463411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jdjqqqdq_1
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 0
-        width: 47
-        height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2bc95e3148d2bfce0800000000000000
-      internalID: -1370451616311436110
+      spriteID: 756205aad054a43f0800000000000000
+      internalID: -915843649222203817
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 228623210ff44b041a567a7752af6692
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jdjqqqdq_0: -8837053558658463411
-      jdjqqqdq_1: -1370451616311436110
+      dore_unlocked_0: -915843649222203817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

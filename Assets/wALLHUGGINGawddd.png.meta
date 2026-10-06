@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 3578ca01cca9f1743992fabefded0a4c
+guid: d18eb0f59ca64204b84ed05418c87495
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8837053558658463411
-    second: jdjqqqdq_0
+      213: -4780725013136956199
+    second: wALLHUGGINGawddd_0
   - first:
-      213: -1370451616311436110
-    second: jdjqqqdq_1
+      213: 7491196828119283383
+    second: wALLHUGGINGawddd_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,45 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jdjqqqdq_0
+      name: wALLHUGGINGawddd_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 21
-        width: 8
-        height: 8
+        x: 19
+        y: 0
+        width: 47
+        height: 67
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d498f0feb9a7c5580800000000000000
-      internalID: -8837053558658463411
+      spriteID: 9d4a52f0ee377adb0800000000000000
+      internalID: -4780725013136956199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jdjqqqdq_1
+      name: wALLHUGGINGawddd_1
       rect:
         serializedVersion: 2
-        x: 21
-        y: 0
-        width: 47
-        height: 67
+        x: 68
+        y: 21
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2bc95e3148d2bfce0800000000000000
-      internalID: -1370451616311436110
+      spriteID: 7b6359a33d316f760800000000000000
+      internalID: 7491196828119283383
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 228623210ff44b041a567a7752af6692
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jdjqqqdq_0: -8837053558658463411
-      jdjqqqdq_1: -1370451616311436110
+      wALLHUGGINGawddd_0: -4780725013136956199
+      wALLHUGGINGawddd_1: 7491196828119283383
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

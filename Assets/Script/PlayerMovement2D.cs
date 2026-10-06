@@ -56,6 +56,8 @@ public class PlayerMovement2D : MonoBehaviour
     public float maxFallSpeed    = 32f;
 
     [Header("Dash")]
+    [Tooltip("Shown for the duration of a dash. Overrides the Animator while active.")]
+    public Sprite dashSprite;
     public float dashSpeed    = 34f;
     public float dashDuration = 0.14f;
     [Tooltip("Speed you're left with the instant the dash ends.")]
@@ -232,12 +234,15 @@ public class PlayerMovement2D : MonoBehaviour
     }
 
     private void LateUpdate()
-    {
-        // Runs after Animator evaluation, so forcing the sprite here guarantees it's what
-        // actually shows on screen — no need to touch the Animator or IsRunning/IsIdle at all.
-        if (!spriteRenderer || !wallSprite) return;
-        if (IsOnWall && !isGrounded) spriteRenderer.sprite = wallSprite;
-    }
+{
+    // Runs after Animator evaluation, so forcing the sprite here is what actually shows on screen.
+    if (!spriteRenderer) return;
+
+    if (isDashing && dashSprite)
+        spriteRenderer.sprite = dashSprite;          // dash has priority
+    else if (IsOnWall && !isGrounded && wallSprite)
+        spriteRenderer.sprite = wallSprite;
+}
 
     // ── input & checks ───────────────────────────────────────────
 

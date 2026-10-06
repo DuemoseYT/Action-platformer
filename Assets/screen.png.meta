@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 3578ca01cca9f1743992fabefded0a4c
+guid: e7b9b9e39ef58fe45b9b9d83c2af983b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8837053558658463411
-    second: jdjqqqdq_0
-  - first:
-      213: -1370451616311436110
-    second: jdjqqqdq_1
+      213: 8762952677643603340
+    second: screen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jdjqqqdq_0
+      name: screen_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 21
-        width: 8
-        height: 8
+        x: 251
+        y: 93
+        width: 130
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d498f0feb9a7c5580800000000000000
-      internalID: -8837053558658463411
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jdjqqqdq_1
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 0
-        width: 47
-        height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2bc95e3148d2bfce0800000000000000
-      internalID: -1370451616311436110
+      spriteID: c8d418e38034c9970800000000000000
+      internalID: 8762952677643603340
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 228623210ff44b041a567a7752af6692
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jdjqqqdq_0: -8837053558658463411
-      jdjqqqdq_1: -1370451616311436110
+      screen_0: 8762952677643603340
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
