@@ -43,7 +43,7 @@ public class RedButton : MonoBehaviour
             interactionPrompt.SetActive(playerInRange && !activated);
 
         // Press E
-        if (playerInRange && !activated && Input.GetKeyDown(KeyCode.E))
+        if (playerInRange && !activated)
         {
             Activate();
         }
