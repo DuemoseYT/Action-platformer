@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 30fc6859bc73f044c9f92ce0926e753d
+guid: 517c67688a8dbc842befa49560665c9c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2530564911472380330
-    second: button_0
-  - first:
-      213: 1763989116612304091
-    second: button_1
+      213: 1153371968701912908
+    second: goofy_ahh_machine_kopier_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_0
+      name: goofy_ahh_machine_kopier_0
       rect:
         serializedVersion: 2
-        x: 272
-        y: 13
-        width: 34
-        height: 28
+        x: 1
+        y: 0
+        width: 62
+        height: 57
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa90165216f5e1320800000000000000
-      internalID: 2530564911472380330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: button_1
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 13
-        width: 34
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bdcd45b61c2fa7810800000000000000
-      internalID: 1763989116612304091
+      spriteID: c47de58d1b9910010800000000000000
+      internalID: 1153371968701912908
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6c6920050dc79f945a51bbcff7665cc6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button_0: 2530564911472380330
-      button_1: 1763989116612304091
+      goofy_ahh_machine_kopier_0: 1153371968701912908
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -86,6 +86,8 @@ public class PlayerMovement2D : MonoBehaviour
     [Header("Ground Pound")]
     public KeyCode keyGroundPound = KeyCode.S;
     public float groundPoundSpeed  = 40f;
+    [Tooltip("Seconds after landing a ground pound before you can start another.")]
+    public float groundPoundCooldown = 0.6f;
     [Tooltip("Locks horizontal movement while pounding. Turn off for a more Hollow-Knight-ish diagonal pound.")]
     public bool  groundPoundLockX  = true;
     public int    groundPoundDamage    = 2;
@@ -120,6 +122,12 @@ public class PlayerMovement2D : MonoBehaviour
     public string isRunningParam = "IsRunning";
     [Tooltip("Bool parameter name for idle — always the exact opposite of IsRunning, so you can condition transitions on it directly instead of IsRunning == false.")]
     public string isIdleParam = "IsIdle";
+    [Tooltip("Bool parameter name that's true while rising from a jump or wall jump. Turns off at the apex when you start falling.")]
+    public string isJumpingParam = "IsJumping";
+    [Tooltip("Bool parameter name that's true from the moment a ground pound starts until it lands.")]
+    public string isGroundPoundingParam = "IsGroundPounding";
+    [Tooltip("Bool parameter name that's true while an attack is active. Your attack script drives this by calling BeginAttack(duration).")]
+    public string isAttackingParam = "IsAttacking";
     [Tooltip("Minimum horizontal speed to count as 'running' — keeps it off during the last inch of sliding to a stop.")]
     public float runAnimThreshold = 0.1f;
 
@@ -149,7 +157,9 @@ public class PlayerMovement2D : MonoBehaviour
     private Vector2 baseColliderSize;
     private Vector2 baseColliderOffset;
 
-    private bool isGroundPounding;
+    private bool  isGroundPounding;
+    private float groundPoundCooldownTimer;
+    private float attackTimer;
 
     // ─────────────────────────────────────────────────────────────
 
@@ -199,7 +209,8 @@ public class PlayerMovement2D : MonoBehaviour
             StartDash();
 
         // ── ground pound ────────────────────────────────────────
-        if (Input.GetKeyDown(keyGroundPound) && !isGrounded && !isDashing && !isSliding && !isGroundPounding)
+        if (Input.GetKeyDown(keyGroundPound) && !isGrounded && !isDashing && !isSliding && !isGroundPounding
+            && groundPoundCooldownTimer <= 0f)
             StartGroundPound();
 
         // ── slide ──────────────────────────────────────────────
@@ -216,10 +227,16 @@ public class PlayerMovement2D : MonoBehaviour
     private void UpdateAnimator()
     {
         if (!animator) return;
+
         bool running = isGrounded && !isDashing && !isSliding && !isGroundPounding
                        && Mathf.Abs(Vel.x) > runAnimThreshold;
+        bool jumping = isJumping && !isDashing && !isSliding && !isGroundPounding;
+
         animator.SetBool(isRunningParam, running);
         animator.SetBool(isIdleParam, !running);
+        animator.SetBool(isJumpingParam, jumping);
+        animator.SetBool(isGroundPoundingParam, isGroundPounding);
+        animator.SetBool(isAttackingParam, IsAttacking);
     }
 
     private void FixedUpdate()
@@ -234,15 +251,15 @@ public class PlayerMovement2D : MonoBehaviour
     }
 
     private void LateUpdate()
-{
-    // Runs after Animator evaluation, so forcing the sprite here is what actually shows on screen.
-    if (!spriteRenderer) return;
+    {
+        // Runs after Animator evaluation, so forcing the sprite here is what actually shows on screen.
+        if (!spriteRenderer) return;
 
-    if (isDashing && dashSprite)
-        spriteRenderer.sprite = dashSprite;          // dash has priority
-    else if (IsOnWall && !isGrounded && wallSprite)
-        spriteRenderer.sprite = wallSprite;
-}
+        if (isDashing && dashSprite)
+            spriteRenderer.sprite = dashSprite;          // dash has priority
+        else if (IsOnWall && !isGrounded && wallSprite)
+            spriteRenderer.sprite = wallSprite;
+    }
 
     // ── input & checks ───────────────────────────────────────────
 
@@ -288,6 +305,8 @@ public class PlayerMovement2D : MonoBehaviour
         wallCoyoteCounter -= dt;
         dashCooldownTimer -= dt;
         wallJumpLockTimer -= dt;
+        groundPoundCooldownTimer -= dt;
+        attackTimer       -= dt;
         if (isSliding) slideTimer += dt;
     }
 
@@ -484,6 +503,7 @@ public class PlayerMovement2D : MonoBehaviour
     private void EndGroundPound()
     {
         isGroundPounding = false;
+        groundPoundCooldownTimer = groundPoundCooldown;
         rb.gravityScale = gravityScale;
         Vel = new Vector2(Vel.x, 0f);
 
@@ -525,6 +545,13 @@ public class PlayerMovement2D : MonoBehaviour
     public bool IsGrounded => isGrounded;
     public bool IsSliding  => isSliding;
     public int  Facing     => facing;
+    public bool IsAttacking => attackTimer > 0f;
+
+    /// <summary>Call from your attack script when an attack starts. IsAttacking stays true for 'duration' seconds.</summary>
+    public void BeginAttack(float duration) => attackTimer = duration;
+
+    /// <summary>Call to cut an attack short (e.g. on hit-stun or cancel).</summary>
+    public void EndAttack() => attackTimer = 0f;
 
     /// <summary>Bounce the player upward off something they down-attacked.</summary>
     public void Pogo(float bouncePower, float horizontalBoost, float maxHorizontal, bool refillDash)
